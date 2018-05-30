@@ -20,7 +20,7 @@ while True:
         ying_hang.cai_shu_zi()
     elif xuan_ze==8:
         ying_hang.xue_hua()
-        print('                                         欢迎下次光临，再见')
+        print('                                                            欢迎下次光临，再见')
         break
 
 

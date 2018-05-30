@@ -99,17 +99,18 @@ def qu_kuang():
             for a in list2:
                 y=a['账户余额']
                 qu_qian=float(input('请输入您要取款的金额：'))
-                biao_ji=15
-                break
-        if biao_ji==15 and qu_qian<=y:
-            print('正在办理请等待')
-            print('提款成功')
-            time.sleep(0.5)
-            yu_e=y-qu_qian
-            print('您当前余额为：%f' % yu_e)
+                if qu_qian<=y:
+                    print('正在办理请等待')
+                    print('提款成功')
+                    time.sleep(0.5)
+                    yu_e=y-qu_qian
+                    print('您当前余额为：%f' % yu_e)
+                    biao_ji=15
+                    break
+                else:
+                    print('余额不足')
+        if biao_ji==15:
             break
-        else:
-            print('输入错误')
 def zhu_xiao():
     biao_ji=0
     name2=input('请输入您的姓名：')
@@ -209,24 +210,24 @@ def xue_hua():
     for i in range(1,6):
         a=random.randint(1,150)
         print(' '*a,'✾')
-        time.sleep(0.2)
+        time.sleep(0.1)
         b=random.randint(1,150)
         print(' '*b,'✿')
-        time.sleep(0.2)
+        time.sleep(0.1)
         c=random.randint(1,150)
         print(' '*c,'❁')
-        time.sleep(0.2)
+        time.sleep(0.1)
         d=random.randint(1,150)
         print(' '*d,'❃')
-        time.sleep(0.2)
+        time.sleep(0.1)
         e=random.randint(1,150)
         print(' '*e,'❋')
-        time.sleep(0.2)
+        time.sleep(0.1)
         f=random.randint(1,150)
         print(' '*f,'❀')
-        time.sleep(0.2)
+        time.sleep(0.1)
         g=random.randint(1,150)
         print(' '*g,'⚘')
-        time.sleep(0.2)
+        time.sleep(0.1)
 
 
